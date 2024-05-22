@@ -23,7 +23,7 @@ To use the Medical Chatbot, you'll need to have Python and the following librari
 You can install these using pip:
 
 ```bash
-pip install chainer lanchain transformers llama2
+pip install chainlit langchain ctransformers langchain_community
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ pip install chainer lanchain transformers llama2
 To start the chatbot, simply run the main Python script:
 
 ```bash
-python main.py
+chainlit run model.py
 ```
 
 You can then interact with the chatbot by typing in your queries or symptoms.
@@ -41,7 +41,7 @@ You can then interact with the chatbot by typing in your queries or symptoms.
 The chatbot is trained using PDF files. To train the chatbot with your own data, place your PDF files in the `data` directory and run the training script:
 
 ```bash
-python train.py
+python ingest.py
 ```
 
 ## Contributing
